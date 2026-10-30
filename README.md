@@ -1,15 +1,24 @@
 # LeetCode Daily - Java
 
-A repository documenting my daily LeetCode practice using Java.
+Daily LeetCode practice using Java 21.
 
 ## Stats
 
-- Total Solved: 0
-- Easy: 0
+- Total Solved: 2
+- Easy: 2
 - Medium: 0
 - Hard: 0
+
+## Quality
+
+- JUnit 5 tests
+- Complexity analysis in problem notes
+- Automated README updates
+- GitHub Actions
 
 ## Solutions
 
 | # | Problem | Difficulty | Solution |
-|---|----------|------------|----------|
+|---|---------|------------|----------|
+| 0001 | Two Sum | Easy | ✅ |
+| 0009 | Palindrome Number | Easy | ✅ |

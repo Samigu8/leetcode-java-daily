@@ -1,7 +1,9 @@
+package com.samigu8.leetcode.easy.palindromenumber;
+
 /**
  * Problem: 9. Palindrome Number
  * Difficulty: Easy
- * Date Solved: 2026-10-30
+ * Date Solved: 10/30/2026
  *
  * Approach:
  * Reverse the integer and compare
@@ -11,7 +13,7 @@
  * Space Complexity: O(1)
  */
 
-class Solution {
+public class PalindromeNumber {
 
     public boolean isPalindrome(int x) {
 
