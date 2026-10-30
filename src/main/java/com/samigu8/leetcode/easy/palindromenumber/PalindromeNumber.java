@@ -6,8 +6,8 @@ package com.samigu8.leetcode.easy.palindromenumber;
  * Date Solved: 10/30/2026
  *
  * Approach:
- * Reverse the integer and compare
- * with the original number.
+ * Reverse the second half of the integer and compare it
+ * with the first half.
  *
  * Time Complexity: O(log n)
  * Space Complexity: O(1)
@@ -21,18 +21,17 @@ public class PalindromeNumber {
             return false;
         }
 
-        int original = x;
-        int reversed = 0;
+        if (x != 0 && x % 10 == 0) {
+            return false;
+        }
 
-        while (x > 0) {
+        int reversedHalf = 0;
 
-            int digit = x % 10;
-
-            reversed = reversed * 10 + digit;
-
+        while (x > reversedHalf) {
+            reversedHalf = reversedHalf * 10 + x % 10;
             x /= 10;
         }
 
-        return original == reversed;
+        return x == reversedHalf || x == reversedHalf / 10;
     }
 }

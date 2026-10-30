@@ -25,4 +25,14 @@ class PalindromeNumberTest {
     void zeroIsPalindrome() {
         assertTrue(solution.isPalindrome(0));
     }
+
+    @Test
+    void largestIntegerIsNotPalindrome() {
+        assertFalse(solution.isPalindrome(Integer.MAX_VALUE));
+    }
+
+    @Test
+    void evenLengthPalindrome() {
+        assertTrue(solution.isPalindrome(1221));
+    }
 }
